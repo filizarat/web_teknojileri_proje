@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>MY BLOG</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body background="img/backround.jpeg">
+	<header>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<input type="checkbox" id="res-menu">
+				<label for="res-menu"><img src="img/iconnmenu.jpg"></label>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Ana Sayfa</a></li>
+						<li><a href="egitim.html">Özgeçmiş</a></li>
+						<li><a href="sehrim.html">Memleketim</a></li>
+						<li><a href="mirasımız.html">Mirasımız</a></li>
+						<li><a href="iletisim.html">İletişim</a></li>
+					</ul>
+					<div class="clear"></div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<form action="yorum.php" method="post" name="form" onsubmit="return sonuc()" id="form">
+			<div class="form-group">
+				<label for="adsoyad">Ad Soyad</label>
+				<input type="text" class="form-control" value="" name="adi_soyadi" onkeypress="Harf(event)">
+			</div>
+			<div class="form-group">
+				<label for="adsoyad">Cinsiyet </label>
+				<br>
+				<label for="Kadın"> Kadın</label>
+				<input type="radio" name="chooseone" value="Kadın">
+				<label for="Erkek"> Erkek</label>
+				<input type="radio" name="chooseone" value="Erkek"><br>
+
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="text" class="form-control" id="email" value="" name="mail">
+			</div>
+			<div class="form-group">
+				<label for="telefon">Telefon</label>
+				<input class="form-control" id="telefon" type="text" name="telefon" value="" maxlength="11"
+					onkeypress="Sayi(event)">
+			</div>
+			<div class="form-group">
+				<label for="message">Mesaj</label>
+				<textarea name="mesaj" id="message" cols="30" rows="10" class="form-control" value=""></textarea>
+			</div>
+			<div class="row col-md-7 mb-5 mb-md-0">
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary btn-lg" value="GÖNDER" id="buton" name="gonder">
+				</div>
+				<div class="form-group" style="margin-left : 10px;">
+					<input type="button" class="btn btn-primary btn-lg" value="TEMİZLE" id="butonn" name="temizle"
+						onclick="temizlee()">
+				</div>
+			</div>
+
+		</form>
+	</div>
+	<footer>
+		<div class="footerr">
+			<a href="https://www.facebook.com/filiz.art.79"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://www.instagram.com/flzart/?hl=tr"><i class="fa fa-instagram"></i></a>
+		</div>
+	</footer>
+</body>
+
+</html>

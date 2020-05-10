@@ -1,0 +1,241 @@
+body{
+	margin:0;
+	font-family:Arial;
+
+}
+header{
+	background-color:#144349;
+}
+#res-menu{
+	display:none;/* checkboxun gözükmemesi için*/
+}
+header label {
+	display:none;/* menü iconunun gözükmemesi için*/
+	width: 32px;
+	height:32px;
+	padding:10px;
+	border-right: 1px solid #ffffff;
+}
+header label:hover{
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.3);
+}
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none; /*menü elemanların liste old için başında nokta olmasın diye*/
+	display:flex;
+	justify-content: center;
+}
+.menu li{
+	margin:0;
+	padding:0;
+	border-right: 1px solid #fff;
+}
+.menu li:first-child{
+	border-left: 1px solid #fff; /*sadece en baştaki hakkımdanın soluna çizgi için*/
+}
+.menu li:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+.menu li a{
+	display:block;
+	padding:15px 20px;
+	color:#ffffff;
+	text-decoration:none;/*linklerin altındaki çizgilerin gitmesi için*/
+}
+.colon{
+	margin: 15px 0px;
+	color: #ffffff;
+}
+
+.resim{
+	width: 500px;
+}
+.yazi{
+	width: 500px;
+	float: left;
+	left:0px;
+}
+.content{
+	margin: 10px auto;
+width: 1000px;
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+.sehir {
+	margin-bottom: 10px;
+	margin: 10px auto;
+width: 1000px;
+}
+.sehir p{
+	margin: 5px auto;
+}
+.baslık{
+	margin-top: 50px;
+	font-family:"forte";
+	font-size: 2em;
+}
+.footer{
+	position: relative;
+	margin-top: -50px;
+	bottom: 0px;
+	background-color:#014c4e;
+	width: 100%;
+	height: 50px;
+	text-align:center;
+}
+.footerr{
+	position: relative;
+	margin-top: -50px;
+	bottom: 0px;
+	background-color: #014c4e;
+	width: 100%;
+	height: 100px;
+	text-align:center;
+	font-size: 40px;
+}
+.fa-facebook-official
+{
+	color: lightslategrey;
+	margin-right: 15px;
+}
+.fa-instagram{
+	color:  lightslategrey;
+}
+.fa-facebook-official:hover{
+	color:white;
+}
+.fa-instagram:hover{
+	color:white;
+}
+table{
+	width: 1000px;
+	margin: 10px auto;
+	padding: 0;
+	max-width: 100%;
+}
+
+h4{
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+}
+h5{
+	margin:30px 0px;
+	font-size: 2em;
+font-family:Maiandra GD;
+}
+#sehirbaslık{
+	font-family:Maiandra GD;
+}
+#buton{
+	background-color: #3f62d6;
+	width: 3cm;
+	height: 1cm;
+
+
+}
+#butonn{
+	background-color: #3f62d6;
+	width: 3cm;
+	height: 1cm;
+	
+}
+td{
+	margin: 0 auto;
+}
+#slider{position: relative;margin:0 auto;width:1000px;height:370px;overflow:hidden;}
+#slider img{width:1000px;height:370px;}
+#slider li{list-style:none;}
+.sliderbutton{position:relative;margin:0 auto;width:120px;margin-top:-25px;}
+.sliderbutton li{list-style: none;padding:5px;background:red;float:left;margin-right:10px;border-radius:10px;}
+.sliderleft{cursor:pointer;background:rgba(0,0,0,0.2);position:absolute;width:50px;height:370px;line-height:370px;}
+.sliderright{margin-left:950px;cursor:pointer;background:rgba(0,0,0,0.2);position:absolute;width:50px;height:370px;line-height:370px;}
+
+
+@media (max-width:768px)and (min-width:100px){
+	header label {
+		display:inline;
+	}
+	.menu {
+		position:absolute;
+		background-color:#014c4e;
+		width:100%;
+		margin-top:-100%;
+		
+	}
+
+	.menu ul{
+		flex-direction:column;
+	}
+	.menu li{
+	border-top: 1px solid #fff;
+}
+	#res-menu:checked ~ .menu{
+		position: relative;
+		margin:0;
+	}
+	.footer{
+		position: relative;
+	margin-top: -50px;
+	bottom: 0px;
+	background-color: #014c4e;
+	width: 100%;
+	height: 50px;
+	text-align:center;
+	top:20px;
+	}
+	.content{
+		width:370px;
+		margin:10px 10px;
+		
+		
+	}
+.sehir{
+		width:370px;
+		margin:10px 10px;
+		
+		
+	}
+	.hakkım{
+		color: #fff;
+	}
+	.colon{
+		float: left;
+		width:370px;
+	}
+	.baslık{
+		color: #fff;
+	}
+	table,td,tr{ 
+		width: 370px;
+		display: block; 
+		margin-top: 5px;
+		margin-bottom: 15px;
+		margin-left: 0px;
+		padding: 0;
+}
+td { 
+	
+	border: none;
+	position: relative;}
+#buton{
+	margin-bottom: 30px;
+	background-color: #3f62d6;
+	
+}
+#morresim{
+	width: 380px;
+}
+.egitimresim{
+	width: 400px;
+}
+#dısbölme
+{
+	text-align: center;
+	
+}
+}	
